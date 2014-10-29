@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails angular_rails: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2302e493-4f1a-4ce9-ac02-98a67ea376a3">
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://127.0.0.1/angular_rails_development</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfd8dfc5dfc5dfde</user-password>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails angular_rails: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f9dd99cf-b9ef-47b4-af36-61eee364c4c3">
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://&lt;%= ENV[&apos;RDS_HOSTNAME&apos;] %&gt;:&lt;%= ENV[&apos;RDS_PORT&apos;] %&gt;/&lt;%= ENV[&apos;RDS_DB_NAME&apos;] %&gt;</jdbc-url>
+    <user-name>&lt;%= ENV[&apos;RDS_USERNAME&apos;] %&gt;</user-name>
+    <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff8dfeedff9dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>
