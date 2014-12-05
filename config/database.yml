@@ -10,15 +10,14 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
+  adapter: postgresql
 
 
 development:
-  adapter: mysql2
-  socket: /Applications/MAMP/tmp/mysql/mysql.sock
+  adapter: postgresql
   pool: 5
-  username: root
-  password: root
+  username: postgres
+  password: desert
   host: localhost
   database: angular_rails_development
 
@@ -47,18 +46,4 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  adapter: mysql2
-  encoding: utf8
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
-    #adapter: mysql2
-    #encoding: utf8
-    #database: angular_rails_production
-    #username: amahon78
-    #password: Ruger9m#
-    #host: aazj560pvrud0c.ca6qsf0n1iwr.ap-southeast-2.rds.amazonaws.com
-    #port: 3306
+
