@@ -7,10 +7,10 @@
  */
 angular
     .module('AngularRails', [
-    'ngRoute',
-    'templates'
+        'ngRoute',
+        'templates'
     ])
-    .config(function($routeProvider, $locationProvider){
+    .config(['$routeProvider','$locationProvider',function($routeProvider, $locationProvider){
         $routeProvider
             .when('/', {
                 templateUrl: 'home.html',
@@ -26,4 +26,4 @@ angular
             enabled: true,
             requireBase: false
         });
-    });
+    }]);
